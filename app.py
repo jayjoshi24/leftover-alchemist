@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Gemini Setup
-API_KEY = "YOUR_API_KEY"  # તમારી API Key અહીં નાખો
+API_KEY = "AIzaSyDMtOwtoyaojUnpxbGjErQgzgHwP1DZdEQ"  # તમારી API Key અહીં નાખો
 genai.configure(api_key=API_KEY)
 
 # ૨૦૨૬ ના લેટેસ્ટ મોડેલનો ઉપયોગ
@@ -36,3 +36,4 @@ if st.button("નવી વાનગી બતાવો ✨"):
                 st.error(f"ભૂલ આવી છે: {e}")
     else:
         st.warning("મહેરબાની કરીને સામગ્રીનું નામ લખો!")
+
