@@ -6,7 +6,7 @@ import os
 # Replace 'YOUR_API_KEY' with your actual key or use environment variables
 API_KEY = "AIzaSyDMtOwtoyaojUnpxbGjErQgzgHwP1DZdEQ" 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-3-flash-preview')
 
 st.title("🍲 Leftover Alchemist")
 st.write("Turn your noon leftovers into a brand-new dinner!")
@@ -34,4 +34,5 @@ if st.button("Transform for Dinner"):
             except Exception as e:
                 st.error(f"Error: {e}")
     else:
+
         st.warning("Please enter an ingredient first!")
