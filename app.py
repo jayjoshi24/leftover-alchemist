@@ -9,7 +9,7 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-3-flash-preview') # અથવા 'gemini-2.0-flash'
 
 # App નું ગુજરાતી ટાઈટલ
-st.title("🍲 રસોઈ મેજિક: બપોરનું જમણ, સાંજની મિજબાની")
+st.title("🍲 રસોઈ : બપોરનું જમણ, સાંજની મિજબાની")
 st.subheader("બપોરની વધેલી રસોઈમાંથી બનાવો સાંજ માટે ટેસ્ટી વાનગી!")
 
 # User Input in Gujarati
@@ -36,5 +36,6 @@ if st.button("નવી વાનગી બતાવો ✨"):
                 st.error(f"ભૂલ આવી છે: {e}")
     else:
         st.warning("મહેરબાની કરીને સામગ્રીનું નામ લખો!")
+
 
 
