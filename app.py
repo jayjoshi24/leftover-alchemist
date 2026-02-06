@@ -6,9 +6,9 @@ import google.generativeai as genai
 # તમારી API Key અહીં નાખો
 
 # કોડમાં કી સીધી ન લખવી
-API_KEY = st.secrets["AIzaSyCenNlmN08LDcPvX26tP3wC2UIXJpA6mHY"]
+GEMINI_API_KEY = st.secrets["AIzaSyCenNlmN08LDcPvX26tP3wC2UIXJpA6mHY"]
 
-genai.configure(api_key=API_KEY)
+genai.configure(api_key=GEMINI_API_KEY)
 
 # ૨૦૨૬ ના લેટેસ્ટ મોડેલનો ઉપયોગ
 model = genai.GenerativeModel('gemini-3-flash-preview') # અથવા 'gemini-2.0-flash'
@@ -41,6 +41,7 @@ if st.button("નવી વાનગી બતાવો ✨"):
                 st.error(f"ભૂલ આવી છે: {e}")
     else:
         st.warning("મહેરબાની કરીને સામગ્રીનું નામ લખો!")
+
 
 
 
