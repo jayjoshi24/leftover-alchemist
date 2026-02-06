@@ -6,7 +6,6 @@ import google.generativeai as genai
 # તમારી API Key અહીં નાખો
 
 # કોડમાં કી સીધી ન લખવી
-import streamlit as st
 API_KEY = st.secrets["AIzaSyCenNlmN08LDcPvX26tP3wC2UIXJpA6mHY"]
 
 genai.configure(api_key=API_KEY)
@@ -42,6 +41,7 @@ if st.button("નવી વાનગી બતાવો ✨"):
                 st.error(f"ભૂલ આવી છે: {e}")
     else:
         st.warning("મહેરબાની કરીને સામગ્રીનું નામ લખો!")
+
 
 
 
