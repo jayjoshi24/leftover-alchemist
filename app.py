@@ -28,7 +28,7 @@ if st.button("નવી વાનગી બતાવો ✨"):
         બધી જ માહિતી શુદ્ધ ગુજરાતીમાં આપવી.
         """
         
-        with st.spinner('રસોઈયા જેમિની વિચારી રહ્યા છે...'):
+        with st.spinner('શું શું બનાવી સકી ??...'):
             try:
                 response = model.generate_content(prompt)
                 st.markdown(response.text)
@@ -36,4 +36,5 @@ if st.button("નવી વાનગી બતાવો ✨"):
                 st.error(f"ભૂલ આવી છે: {e}")
     else:
         st.warning("મહેરબાની કરીને સામગ્રીનું નામ લખો!")
+
 
